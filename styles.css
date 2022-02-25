@@ -127,12 +127,12 @@ ion-icon:hover {
 	.content h1 {
 		font-size: 2rem;
 		text-align: start;
-		margin-right: 8em;
+		margin-right: 6em;
 	}
 
 	.content p {
 		text-align: start;
-		margin-right: 10em;
+		margin-right: 8em;
 	}
 
 	.content button {
