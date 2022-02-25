@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+	--Violet: hsl(257, 40%, 49%);
+	--SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+	background-image: url(./images/bg-mobile.svg);
+	background-repeat: no-repeat;
+	background-color: var(--Violet);
+	font-family: "Open Sans", sans-serif;
+}
+
+main {
+	box-sizing: border-box;
+}
+
+.logo {
+	width: 8em;
+	margin-top: 1.8em;
+	margin-left: 1.5em;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+	margin: 3em 2em;
+}
+
+.content img {
+	max-width: 100%;
+}
+
+.content-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content h1 {
+	text-align: center;
+	color: white;
+	margin-top: 2em;
+	margin-bottom: 0;
+}
+
+.content p {
+	text-align: center;
+	color: white;
+	font-size: 1rem;
+	font-weight: 400;
+	color: hsla(0, 0%, 100%, 0.8);
+}
+
+.content button {
+	padding: 1em;
+	width: 70%;
+	border: none;
+	border-radius: 2em;
+	box-shadow: 0 6px 6px 8px hsl(0, 0%, 0%, 0.1);
+	background: white;
+	color: var(--Violet);
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+.content button:hover {
+	background: var(--SoftMagenta);
+	color: white;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+
+ion-icon {
+	width: 25px;
+	color: white;
+	cursor: pointer;
+}
+
+ion-icon:hover {
+	color: var(--SoftMagenta);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: white;
+}
+.attribution a {
+	color: var(--SoftMagenta);
+	text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+	body {
+		background-image: url(./images/bg-desktop.svg);
+	}
+
+	.logo {
+		width: 12em;
+		margin-top: 4em;
+		margin-left: 4em;
+	}
+
+	.content {
+		flex-direction: row;
+		margin: 4em 4em;
+	}
+
+	.content-text {
+		align-items: flex-start;
+		transform: translate(3em, -7em);
+	}
+
+	.content h1 {
+		font-size: 2rem;
+		text-align: start;
+		margin-right: 8em;
+	}
+
+	.content p {
+		text-align: start;
+		margin-right: 10em;
+	}
+
+	.content button {
+		width: 30%;
+		padding: 1.5em;
+	}
+
+	.social-icons {
+		justify-content: flex-end;
+		margin-right: 2em;
+	}
+}
